@@ -1,0 +1,133 @@
+body{
+    background:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.watch-circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid #BB2CD9;
+    background: lightyellow;
+    position: relative;
+}
+
+.digits{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.digits span{
+    font-size: 25px;
+    font-weight: 600;
+    transform-origin: center center;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: aqua;
+    padding: 5px 0;
+    text-align: center;
+    top: 10px;  /*move all digits at top*/
+    left: 46%;   /*set all digits center horizontaly at 12*/
+    transform-origin: 50% 190px;  /* Rotate from the center of the circle */
+    transform: translate(-50%, 0);  /* Align digits in the middle */
+}
+
+.digits span:nth-child(12){
+   transform: rotate(0deg); 
+}
+.digits span:nth-child(1){
+    transform: rotate(30deg) ; 
+}
+.digits span:nth-child(2){
+    transform: rotate(60deg) ; 
+  
+}
+.digits span:nth-child(3){
+   transform: rotate(90deg) ; 
+  
+}
+.digits span:nth-child(4){
+   transform: rotate(120deg); 
+  
+}
+.digits span:nth-child(5){
+   transform: rotate(150deg); 
+  
+}
+.digits span:nth-child(6){
+   transform: rotate(180deg); 
+  
+}
+.digits span:nth-child(7){
+   transform: rotate(210deg); 
+  
+}
+.digits span:nth-child(8){
+   transform: rotate(240deg); 
+  
+}
+.digits span:nth-child(9){
+   transform: rotate(270deg); 
+  
+}
+
+.digits span:nth-child(10){
+   transform: rotate(300deg); 
+}
+.digits span:nth-child(11){
+  transform: rotate(330deg); 
+}
+
+
+.hand{
+    position: absolute;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    transform-origin: 0% 0%;  
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+    z-index: 10;
+}
+
+.hour{
+    transform: rotate(30deg); 
+    background: blue; 
+    width: 110px;
+}
+
+.minute{
+    transform: rotate(270deg); 
+    background: black;
+    width: 120px;
+}
+
+.second{
+    transform: rotate(330deg); 
+    background: red;
+    width: 140px;
+}
+
+.time-display{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 120px;
+    font-size: 15px;
+    padding: 5px 10px;
+    z-index: 11;
+    box-shadow: 0 5px 5px #192A56;
+    color: aqua;
+    background: #192A56;
+}
+
+.day-display{
+    margin-right: 10px;
+}
